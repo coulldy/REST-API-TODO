@@ -265,4 +265,5 @@ func (h *HTTPHandlers) HandlDeleteTask(w http.ResponseWriter, r *http.Request) {
 		}
 		return
 	}
+	w.WriteHeader(http.StatusNoContent)
 }
